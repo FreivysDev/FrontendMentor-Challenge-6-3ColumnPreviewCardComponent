@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --colorText: hsla(0, 0%, 100%, 0.75);
+  /*paragraphs*/
+  --veryLightGray: hsl(0, 0%, 95%);
+  /*background, headings, buttons*/
+  --fontTitle: "Big Shoulders Display", cursive;
+  --fontParagraph: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: var(--fontParagraph);
+  background-color: var(--veryLightGray);
+}
+
+.main-container {
+  width: 21.6em;
+  margin: 5.8em auto 2.6em;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 29.3em;
+  padding: 3.2em;
+}
+
+.card--sedans {
+  background-color: var(--brightOrange);
+}
+
+.card--suvs {
+  background-color: var(--darkCyan);
+}
+
+.card--luxury {
+  background-color: var(--veryDarkCyan);
+}
+
+.card__icon {
+  margin-bottom: 2.4em;
+}
+
+.card__title {
+  font-family: var(--fontTitle);
+  color: var(--veryLightGray);
+  font-size: 2.4em;
+  text-transform: uppercase;
+  margin-bottom: 1.6em;
+}
+
+.card__paragraph {
+  color: var(--colorText);
+  height: 8em;
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+}
+
+.card__btn {
+  background-color: var(--veryLightGray);
+  font-family: var(--fontParagraph);
+  width: 9.8em;
+  height: 3.2em;
+  border-style: none;
+  border-radius: 1.6em;
+}
+
+.card__btn:hover {
+  cursor: pointer;
+  border: 2px solid var(--veryLightGray);
+}
+
+.card__btn--sedans {
+  color: var(--brightOrange);
+}
+
+.card__btn--sedans:hover {
+  background-color: var(--brightOrange);
+  color: var(--veryLightGray);
+}
+
+.card__btn--suv {
+  color: var(--darkCyan);
+}
+
+.card__btn--suv:hover {
+  background-color: var(--darkCyan);
+  color: var(--veryLightGray);
+}
+
+.card__btn--luxury {
+  color: var(--veryDarkCyan);
+}
+
+.card__btn--luxury:hover {
+  background-color: var(--veryDarkCyan);
+  color: var(--veryLightGray);
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+  .main-container {
+    width: 58.6em;
+    display: flex;
+    margin-top: 11.3em;
+  }
+
+  .card {
+    height: 33.3em;
+  }
+
+  .card__paragraph {
+    margin-bottom: 5.3em;
+  }
+}
