@@ -71,10 +71,9 @@ body {
 .card__btn {
   background-color: var(--veryLightGray);
   font-family: var(--fontParagraph);
-  width: 9.8em;
-  height: 3.2em;
-  border-style: none;
   border-radius: 1.6em;
+  padding: 1em 2em;
+  text-decoration: none;
 }
 
 .card__btn:hover {
